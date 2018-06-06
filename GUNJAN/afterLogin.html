@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Gunjan Request Pass Page</title>
+	<!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="sidebar.css">
+         <link rel="stylesheet" href="loginForm.css">
+
+        <style type="text/css">
+            .jumbotron
+            {
+                text-align: center;
+                margin-top:20px;
+               padding: 0px;
+               background-color: #A633F2;
+               color: white;
+
+            }
+            
+            .navbar-header
+            {
+                height: 40px;
+            }
+    
+            .navbar
+            {
+                background-color: #7974FE;
+            }
+
+
+            .btn-lg
+            {
+                background-color: #A633F2;
+                color: white;
+                font-weight: bolder;
+            }
+
+            #dv1
+            {
+                margin-top:100px;
+                line-height: 100px;
+            }
+
+            #dv2
+            {
+                line-height: 100px;
+            }
+            
+            button:hover
+            {
+                background-color: white;
+                color: #A633F2;
+            }
+
+        </style>
+
+
+
+
+
+
+    </head>
+    <body>
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+        
+                <ul class="list-unstyled components">
+                    <p><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp; Menu</p>
+						
+						<div class="navbar-header" id="imag">
+							<img src="2021.JPEG" class="img-responsive img-circle">
+						</div>
+						<div>
+                            <input type="text" name="" class="textStyle" readonly="readonly" value="MANAS SAHU" style="color: black"><br />
+                            <input type="text" name="" class="textStyle"  readonly="readonly" value="INS4508N" style="color: black">
+                        </div>
+
+                    <li class="active">
+                         <a href="#"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Request a Gate Pass</a>
+                    </li>
+                    	<li>
+                        <a href="#"><span class="glyphicon glyphicon-qrcode"></span>&nbsp; Scan For Daily Pass</a>
+                        </li>
+                        <li>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; Scan a Friend</a>
+                   		 </li>
+                   	<li>	 
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>&nbsp; Setting</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#"><span class="glyphicon glyphicon-education"></span>&nbsp; Developer</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;  Log out</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                         <a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; History</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div >
+                    </div>
+                </nav>
+
+             
+
+            </div>
+    <div class="container">
+                        <div>
+                            <div class="jumbotron">
+                                <h1>MANAS</h1>
+                            </div>
+                        </div>
+
+                            <div id="dv1">
+                                <hr>
+                                <h3>Request A Gate Pass  </h3>    
+                                <div>
+                                  <a href="leavingForm.html"><button type="button" class="btn-lg">REQUEST</button></a>
+                                </div>                          
+                            </div>
+
+                             <div id="dv2">
+                                <hr>
+                                <h3>Check Your Request Passes History  </h3>    
+                                <div>
+                                  <a href="historyPage.html"><button type="button" class="btn-lg">HISTORY</button></a>
+                                </div>                          
+                            </div>
+    </div><!-- /container -->			
+        </div>
+        
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                     $(this).toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>

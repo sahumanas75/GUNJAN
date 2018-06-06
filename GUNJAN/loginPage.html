@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Gunjan Log in Page</title>
+	<!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="sidebar.css">
+         <link rel="stylesheet" href="loginForm.css">
+
+		<style type="text/css">
+			 .navbar
+            {
+                background-color: #7974FE;
+            }
+		</style>
+
+
+    </head>
+    <body>
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+        
+                <ul class="list-unstyled components">
+                    <p><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp; Menu</p>
+						
+						<div class="navbar-header" id="imag">
+							<img src="2021.JPEG" class="img-responsive img-circle">
+						</div>
+						<div>
+							<input type="text" name="" class="textStyle" readonly="readonly"><br />
+							<input type="text" name="" class="textStyle"  readonly="readonly">
+						</div>
+
+                    <li class="active">
+                         <a href="#"><span class="glyphicon glyphicon-paperclip"></span>&nbsp; Request a Gate Pass</a>
+                    </li>
+                    	<li>
+                        <a href="#"><span class="glyphicon glyphicon-qrcode"></span>&nbsp; Scan For Daily Pass</a>
+                        </li>
+                        <li>
+                        <a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp; Scan a Friend</a>
+                   		 </li>
+                   	<li>	 
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span>&nbsp; Setting</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#"><span class="glyphicon glyphicon-education"></span>&nbsp; Developer</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;  Log out</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                         <a href="#"><span class="glyphicon glyphicon-list-alt"></span>&nbsp; History</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+
+                        
+                    </div>
+                </nav>
+
+             
+
+            </div>
+             <div class="container">
+        <div class="card card-container">
+            <img id="profile-img" class="profile-img-card" src="lo.png" />
+    
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Login Id" required autofocus name="">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="">
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+               <a href="afterLogin.html"> <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button></a>
+            </form><!-- /form -->
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->			
+        </div>
+        
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                     $(this).toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
